@@ -36,7 +36,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		///
 		/// ↓更新処理ここから
 		///
-		Vector3 project = Project(Subtract(project, segment.origin),segment.diff);
+		Vector3 project = Project(Subtract(point, segment.origin),segment.diff);
 		Vector3 closestPoint = ClosestPoint(point, segment);
 	
 
